@@ -1,23 +1,20 @@
-
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  labels:
-    app: q6
   name: q6
+  labels:
+    app: myapp6
 spec:
-  ports: ~
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
-      app: q6
+      app: myapp6
   template:
     metadata:
       labels:
-        app: q6
+        app: myapp6
     spec:
       containers:
-        -
+        - name: q6demo
           image: abhihumber/final_exam:v1
-          name: q6
+
