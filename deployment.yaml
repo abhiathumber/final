@@ -5,7 +5,7 @@ kind: Deployment
 metadata:
   labels:
     app: q6
-  name: exam1
+  name: q6
 spec:
   ports: ~
   replicas: 1
