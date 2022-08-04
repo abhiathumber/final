@@ -1,0 +1,23 @@
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: q41
+  name: exam1
+spec:
+  ports: ~
+  replicas: 1
+  selector:
+    matchLabels:
+      app: q41
+  template:
+    metadata:
+      labels:
+        app: q41
+    spec:
+      containers:
+        -
+          image: abhihumber/final_exam:v1
+          name: exam1
